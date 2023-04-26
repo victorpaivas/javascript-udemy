@@ -1,9 +1,9 @@
-const num1 = prompt('Digite um número');
-const num2 = prompt('Digite outro número');
-let op1 = Number(num1)
-let op2 = Number(num2)
-let res = op1+ op2
-let resultado = document.getElementById('resultado')
+let num1 = prompt('Digite um número');
+let num2 = prompt('Digite outro número');
 
+num1= Number(num1);
+num2 = Number(num2);
 
-alert(`A soma dos dois números é ${res}`);
+const res = num1 + num2
+
+alert(`O resultado de ${num1} + ${num2} é igual á ${res}`);
