@@ -41,7 +41,7 @@ const pessoa1 = {
 pessoa1.fala();
 
 // function factory
-function criarPessoa (nome, sobrenome, idade){
+function criarPessoa (nome, sobrenome, idade) => {
     return {nome, sobrenome, idade};
 }
 

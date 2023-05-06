@@ -37,7 +37,7 @@ alunos.unshift('Amós')
 alunos.push('Amós')
 alunos.push('Antonia')
 alunos.push('José')
-alunos.push('Ana')*/  
+alunos.push('Ana') 
 //para descobrir o tamanho da array
 console.log(alunos.length);
 
