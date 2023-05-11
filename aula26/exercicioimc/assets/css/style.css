@@ -32,7 +32,11 @@ body {
 div {
     display: inline-block;
     text-align: center;
-    margin-right: 50px;
+    margin-right: 35px;
+}
+
+#div1 {
+ 
 }
 
 h1 {
