@@ -40,7 +40,7 @@ function meuEscopo() {
 
         //Validando dados
         if (peso == '' || altura == '') {
-            resultado.style.color = '#a71420'
+            resultado.style.color = '#050505'
             resultado.innerHTML = '[ERROR] Formulário não preenchido corretamente. Verifique seus dados e tente novamente.'
         } else {
             grau.innerHTML = `${nivel}`
