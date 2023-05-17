@@ -1,0 +1,12 @@
+[
+{
+    "nome": "Victor",
+    "idade": 27,
+    "esta_trabalhando": true,
+    "detalhes_profissão": {
+        "profissão": "Avaliador",
+        "empresa": "Iremoc Guarujá"
+    },
+    "hobbies": ["Progamar", "Surfar", "Tocar"]
+}
+]
