@@ -6,6 +6,7 @@ const pausar = document.querySelector('.pausar');
 const zerar = document.querySelector('.zerar');
 let segundos = 0;
 
+
 function getHourToSeconds(segundos) {
     const data = new Date(segundos * 1000);
     return data.toLocaleTimeString('pt-BR', {
@@ -20,8 +21,8 @@ function iniciarRelogio() {
 }
 
 iniciar.addEventListener('click', function(event){
-    segundos = iniciarRelogio();
-    relogio.innerHTML = `${segundos}`
+
+    
 });
 
 pausar.addEventListener('click', function(event){
