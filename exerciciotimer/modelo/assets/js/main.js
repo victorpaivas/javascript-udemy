@@ -5,7 +5,7 @@ const iniciar = document.querySelector('.iniciar');
 const pausar = document.querySelector('.pausar');
 const zerar = document.querySelector('.zerar');
 let segundos = 0;
-
+let timer;
 
 function getHourToSeconds(segundos) {
     const data = new Date(segundos * 1000);
@@ -16,12 +16,41 @@ function getHourToSeconds(segundos) {
 }
 
 function iniciarRelogio() {
-    const timer = setInterval(function () {
+    timer = setInterval(function() {
+        segundos++;
+        relogio.innerHTML = getHourToSeconds(segundos);
     }, 1000);
 }
 
-iniciar.addEventListener('click', function(event){
+document.addEventListener('click', function(e){
+    const el = e.target;
 
+    
+    if(el.classList.contains('iniciar')) {
+        relogio.classList.add('start');
+        relogio.classList.remove('pausado');
+        clearInterval(timer);
+        iniciarRelogio();
+    }
+    
+    if(el.classList.contains('pausar')) {
+        relogio.classList.add('pausado')
+        clearInterval(timer);
+    }
+    
+    if(el.classList.contains('zerar')) {
+        relogio.classList.add('zerado');
+        relogio.classList.remove('pausado');
+        clearInterval(timer);
+        relogio.innerHTML = `00:00:00`
+        segundos = 0;
+    }
+})
+
+
+
+iniciar.addEventListener('click', function(event){
+  
     
 });
 
