@@ -74,3 +74,27 @@ form button:active {
 .iniciar, .pausar, .zerar {
     font-size: 20px;
 }
+
+.iniciar:hover {
+    background-color: green;    
+}
+
+.pausar:hover {
+    background-color: red;
+}
+
+.zerar:hover {
+    background-color: blue;
+}
+
+.start {
+    color: green;
+}
+
+.pausado {
+    color: red;
+}
+
+.zerado {
+    color: black;
+}
