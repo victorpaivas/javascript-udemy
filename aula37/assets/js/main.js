@@ -1,3 +1,5 @@
+
+
 const inputTarefa = document.querySelector('.input-tarefa')
 const btnTarefa = document.querySelector('.btn-tarefa')
 const tarefas = document.querySelector('.tarefas')
@@ -38,7 +40,7 @@ function salvarTarefas() {
         listaDeTarefas.push(tarefaTexto);
         
     }
-    // transforma as tarefas em json em string para salvar e posteriormente abrir com minhas tarefas criadas salva.
+//     // transforma as tarefas em json em string para salvar e posteriormente abrir com minhas tarefas criadas salva.
     const tarefasJSON = JSON.stringify(listaDeTarefas);
     localStorage.setItem('tarefas', tarefasJSON);
 }
@@ -78,3 +80,6 @@ document.addEventListener('click', function (e) {
     }
 
 });
+
+
+
