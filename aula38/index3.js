@@ -25,13 +25,28 @@
 // console.log(typeof p1);
 // console.log(p1);
 
-function falaFrase(comeco) {
-    function falaResto(resto){
-        return comeco + ' ' + resto;
-    }
-    return falaResto;
+// function falaFrase(comeco) {
+//     function falaResto(resto){
+//         return comeco + ' ' + resto;
+//     }
+//     return falaResto;
+// }
+
+// const fala = falaFrase('comeco');
+// const resto = fala('resto!');
+// console.log(resto);
+
+function criaMultiplicador(multiplicador) {
+    // multiplicador  => escopo
+    return function (n) {
+        return n * multiplicador;
+    };
 }
 
-const olaMundo = falaFrase('Olá');
+const duplica = criaMultiplicador(2);
+const triplica = criaMultiplicador(3);
+const quadriplica = criaMultiplicador(4);
 
-console.log(olaMundo('mundo!'));
+console.log(duplica(3));
+console.log(triplica(5));
+console.log(quadriplica(10));
