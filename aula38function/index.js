@@ -1,3 +1,5 @@
+//diferentes formas de declarar as funções
+
 // Funções são First-class objects (objetos de primeira classe)
 // declaração de função (function hoisting)
 

@@ -14,7 +14,7 @@
 
 // usaFalaNome();
 
-// closures
+// Function closures
 
 
 function retornaFuncao() {

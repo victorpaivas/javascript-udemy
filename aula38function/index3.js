@@ -35,6 +35,7 @@
 // const fala = falaFrase('comeco');
 // const resto = fala('resto!');
 // console.log(resto);
+//Retorno da função
 
 function criaMultiplicador(multiplicador) {
     // multiplicador  => escopo
