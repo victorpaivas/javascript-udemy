@@ -61,6 +61,9 @@ pessoa1.getDataNascimento = function () {
 function Pessoa(nome, sobrenome) {
     this.nome = nome;
     this.sobrenome = sobrenome;
+
+    // TRAVA O OBJETO
+    Object.freeze(this);
 }
 // Palavra new cria {} <- this
 const p1 = new Pessoa('Victor', 'Silva');
