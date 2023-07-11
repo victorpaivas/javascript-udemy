@@ -18,7 +18,7 @@ pessoa1.idade = 28;
 //console.log(pessoa1['nome']);
 //console.log(pessoa1.sobrenome);
 
-// delete pessoa1.nome;
+// delete pessoa1.nome;  // apaga chave 
 // console.log(pessoa1)
 
 pessoa1.FalarNome = function () {
@@ -65,6 +65,7 @@ function Pessoa(nome, sobrenome) {
     // TRAVA O OBJETO
     Object.freeze(this);
 }
-// Palavra new cria {} <- this
+// Palavra new cria {} <- this ->
 const p1 = new Pessoa('Victor', 'Silva');
 const p2 = new Pessoa('André', 'Santos');
+
