@@ -22,10 +22,25 @@ Object.setPrototypeOf(p2, Produto.prototype);
 const p1 = new Produto ('Camiseta', 50);
 
 p2.desconto(10);
-console.log(p2);
+// console.log(p2);
 
+const p3 = Object.create(Produto.prototype, {
+    preco: {
+        writable: true,
+        configurable: true,
+        enumerable: true,
+        value: 100       
+    },
+    tamanho: {
+        writable: true,
+        configurable: true,
+        enumerable: true,
+        value: 42
+    }
+});
 
-
+p3.aumento(10);
+console.log(p3)
 
 
 
