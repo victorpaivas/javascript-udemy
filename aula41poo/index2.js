@@ -10,12 +10,14 @@ class Carro {
     }
 
     set velocidade(valor) {
+        console.log('SETTER');
         if(typeof valor !== 'number') return;
         if (valor >= 100 || valor <= 0) return;
         this[_velocidade] = valor
     }
 
     get velocidade() {
+        console.log('SETTER');
         return this[_velocidade];
     }
 
