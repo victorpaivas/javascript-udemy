@@ -1,4 +1,4 @@
-// Validador de CPF
+// Validador de CPF com Constructor Function
 
 //  546.522.618-88  ...   070.987.720-03
 

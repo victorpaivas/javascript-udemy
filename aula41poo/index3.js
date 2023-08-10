@@ -1,3 +1,5 @@
+// Herança com Classes
+
 class DispositivoEletronico {
     constructor(nome) {
         this.nome = nome;
@@ -25,7 +27,7 @@ class DispositivoEletronico {
 
 class Smartphone extends DispositivoEletronico {
     constructor(nome, cor, modelo) {
-        super(nome); 
+        super(nome);   // superclasse
 
         this.cor = cor;
         this.modelo = modelo;
@@ -35,5 +37,5 @@ class Smartphone extends DispositivoEletronico {
 
 
 const s1 = new Smartphone('Samsung', 'Preto', 'Galaxy s10')
-
+s1.ligar()
 console.log(s1);
