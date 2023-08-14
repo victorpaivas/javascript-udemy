@@ -41,11 +41,11 @@ class ValidaCPF {
     }
 }
 
-const validacpf = new ValidaCPF('070.987.720-03');
-// const validacpf = new ValidaCpf('111.111.111-11 ');
+// const validacpf = new ValidaCPF('070.987.720-03');
+// // const validacpf = new ValidaCpf('111.111.111-11 ');
 
-if (validacpf.valida()) {
-    console.log('CPF Válido.')
-} else {
-    console.log('CPF Inválido.')
-}
+// if (validacpf.valida()) {
+//     console.log('CPF Válido.')
+// } else {
+//     console.log('CPF Inválido.')
+// }
