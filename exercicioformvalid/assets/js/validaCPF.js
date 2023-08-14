@@ -1,4 +1,4 @@
-// Validador de CPF usando Class
+/* Validador de CPF usando Class */
 
 class ValidaCPF {
     constructor(cpfEnviado) {

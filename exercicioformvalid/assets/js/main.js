@@ -1,3 +1,5 @@
+
+
 class ValidaFormulario {
     constructor() {
         this.formulario = document.querySelector('.formulario');
@@ -29,23 +31,23 @@ class ValidaFormulario {
                 valid = false;
             }
 
-            if (campo.classList.contains('cpf')) {
-                if (!this.validCPF(campo)) valid = false;
-            }
+            // if (campo.classList.contains('cpf')) {
+            //     if (!this.validCPF(campo)) valid = false;
+            // }
 
         }
     }
 
-    validCPF(campo) {
-        const cpf = new ValidaCPF()
+    // validCPF(campo) {
+    //     const cpf = new ValidaCPF()
 
-        if(!cpf.valida()) {
-            this.criaErro(capo, 'CPF inválido.');
-            return false;
-        }
+    //     if(!cpf.valida()) {
+    //         this.criaErro(capo, 'CPF inválido.');
+    //         return false;
+    //     }
         
-        return true;
-    }
+    //     return true;
+    // }
 
     criaErro(campo, msg) {
         const div = document.createElement('div');
