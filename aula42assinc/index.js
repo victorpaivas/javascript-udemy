@@ -27,8 +27,8 @@ esperaAi('Conexão com DB...', rand(1, 3))
 }).then(resposta => {
     console.log(resposta)
 }).then(resposta => {
-    console.log('Exibindo dados na tela...')
-    return esperaAi(22222, rand(1, 3))
+    console.log('Exibindo resp na tela...')
+    return esperaAi('22222', rand(1, 3))
 })
 .catch(err => {
     console.log(err + 'ERROR BAD VALUE')
